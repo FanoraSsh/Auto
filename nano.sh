@@ -171,7 +171,7 @@ Save_And_Exit () {
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/FanoraSsh/backup
-    git push -f https://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@github.com/Rerechan02/backup.git &> /dev/null
+    git push -f https://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@github.com/FanoraSsh/backup.git &> /dev/null
 }
 
 if [ ! -d "/root/user-backup/" ]; then
