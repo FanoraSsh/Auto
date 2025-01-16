@@ -29,9 +29,9 @@ echo -e   ""
 read -p " Select menu :  "  opt
 echo -e   ""
 case $opt in
-1) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/1.sh" ; chmod +x /usr/bin/* ; menu ;;
-2) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/2.sh" ; chmod +x /usr/bin/* ; menu ;;
-3) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/3.sh" ; chmod +x /usr/bin/* ; menu ;;
-4) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/4.sh" ; chmod +x /usr/bin/* ; menu ;;
-5) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/5.sh" ; chmod +x /usr/bin/* ; menu ;;
+1) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/FanoraSsh/Example/main/tema/1.sh" ; chmod +x /usr/bin/* ; menu ;;
+2) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/FanoraSsh/Example/main/tema/2.sh" ; chmod +x /usr/bin/* ; menu ;;
+3) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/FanoraSsh/Example/main/tema/3.sh" ; chmod +x /usr/bin/* ; menu ;;
+4) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/FanoraSsh/Example/main/tema/4.sh" ; chmod +x /usr/bin/* ; menu ;;
+5) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/FanoraSsh/Example/main/tema/5.sh" ; chmod +x /usr/bin/* ; menu ;;
 esac
