@@ -19,7 +19,7 @@ commonname=givpn.my.id
 email=admin@givpn.my.id
 
 # simple password minimal
-curl -sS https://raw.githubusercontent.com/Rerechan02/Example/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
+curl -sS https://raw.githubusercontent.com/FanoraSsh/Example/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -127,13 +127,13 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/Rerechan02/Example/main/ssh/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/FanoraSsh/Example/main/ssh/nginx.conf"
 mkdir -p /home/vps/public_html
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/Rerechan02/Example/main/ssh/newudpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/FanoraSsh/Example/main/ssh/newudpgw"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -259,7 +259,7 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 # banner /etc/issue.net
 sleep 1
 echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/baner.rere "https://raw.githubusercontent.com/Rerechan02/Example/main/issue.net"
+wget -q -O /etc/baner.rere "https://raw.githubusercontent.com/FanoraSsh/Example/main/issue.net"
 chmod +x /etc/baner.rere
     echo "Banner /etc/baner.rere" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/baner.rere"@g' /etc/default/dropbear
@@ -272,11 +272,11 @@ cat> /etc/baner.rere << END
 <font color ='red'>- No Spamming !!!</font><br>
 <font color ='red'>- No Playstation Site !!!</font><br>
 <font color ='red'>- No Ilegal Activities !!!</font><br>
-<font color="white">Report Server Down? : t.me/Rerechan02</font><br>
+<font color="white">Report Server Down? : t.me/FanoraVpnTunnel</font><br>
 END
 
 #install bbr dan optimasi kernel
-wget https://raw.githubusercontent.com/Rerechan02/Example/main/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://raw.githubusercontent.com/FanoraSsh/Example/main/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
