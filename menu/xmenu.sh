@@ -2,7 +2,7 @@
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo "Checking VPS"
 #link izin ip vps
-url_izin='https://raw.githubusercontent.com/Rerechan02/iziznscript/main/ip'
+url_izin='https://raw.githubusercontent.com/FanoraSsh/iziznscript/main/ip'
 
 # Mendapatkan IP VPS saat ini
 ip_vps=$(curl -s ifconfig.me)
@@ -106,7 +106,7 @@ echo -e "\033[1;93m┌───────────────────�
 echo -e "\033[1;93m│                  • XRAY MENU •                  \033[1;93m│"
 echo -e "\e[33m└─────────────────────────────────────────────────┘\033[0m"
 echo -e "\033[1;93m┌─────────────────────────────────────────────────┐\033[0m"
-echo -e "\033[1;93m│\033[0m            ${RED}SCRIPT BY RERECHAN STORE $NC \033[1;93m           │\033[0m"
+echo -e "\033[1;93m│\033[0m            ${RED}SCRIPT BY FANORAPREM STORE $NC \033[1;93m           │\033[0m"
 echo -e "\033[1;93m└─────────────────────────────────────────────────┘\033[0m"
 echo -e " [\e[36m•01\e[0m] Create Vmess         [\e[36m•06\e[0m] Create Vless"
 echo -e " [\e[36m•02\e[0m] Trial Vmess          [\e[36m•07\e[0m] Trial Vless"
