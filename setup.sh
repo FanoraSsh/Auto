@@ -188,7 +188,7 @@ chmod +x menu
 #echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 #sleep 2
 #clear
-#wget -O dns1.sh "https://raw.githubusercontent.com/Rerechan02/Example/main/dns/slowdns-ssh" && chmod +x dns1.sh && ./dns1.sh
+#wget -O dns1.sh "https://raw.githubusercontent.com/FanoraSsh/Example/main/dns/slowdns-ssh" && chmod +x dns1.sh && ./dns1.sh
 
 #install udp custom
 #echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
