@@ -13,7 +13,7 @@ sudo apt install -y wget
 sudo apt install -y curl
 sudo apt install -y dos2unix
 
-source <(curl -sSL 'https://raw.githubusercontent.com/Rerechan02/Example/main/udp/module')
+source <(curl -sSL 'https://raw.githubusercontent.com/FanoraSsh/Example/main/udp/module')
 
 time_reboot() {
   print_center -ama "${a92:-VPS WILL REBOOT IN} $1 ${a93:-SECONDS}"
@@ -49,16 +49,16 @@ else
   rm -rf /etc/UDPCustom/limiter.sh
   rm -rf /etc/UDPCustom/module
   rm -rf /usr/bin/udp
-  source <(curl -sSL 'https://raw.githubusercontent.com/Rerechan02/Example/main/udp/module') &>/dev/null
-  wget -O /etc/UDPCustom/module 'https://raw.githubusercontent.com/Rerechan02/Example/main/udp/module' &>/dev/null
-  wget -O /etc/UDPCustom/udp-custom 'https://raw.githubusercontent.com/Rerechan02/Example/main/udp/udp-custom' &>/dev/null
+  source <(curl -sSL 'https://raw.githubusercontent.com/FanoraSsh/Example/main/udp/module') &>/dev/null
+  wget -O /etc/UDPCustom/module 'https://raw.githubusercontent.com/FanoraSsh/Example/main/udp/module' &>/dev/null
+  wget -O /etc/UDPCustom/udp-custom 'https://raw.githubusercontent.com/FanoraSsh/Example/main/udp/udp-custom' &>/dev/null
   chmod +x /etc/UDPCustom/udp-custom
   chmod +x /etc/UDPCustom/module
   bash /etc/UDPCustom/udp-custom 
-  wget -O /etc/limiter.sh 'https://raw.githubusercontent.com/Rerechan02/Example/main/udp/limiter.sh'
+  wget -O /etc/limiter.sh 'https://raw.githubusercontent.com/FanoraSsh/Example/main/udp/limiter.sh'
   chmod +x /etc/limiter.sh
   cp /etc/limiter.sh /etc/UDPCustom
-  wget -O /usr/bin/udp 'https://raw.githubusercontent.com/Rerechan02/Example/main/udp/udp' 
+  wget -O /usr/bin/udp 'https://raw.githubusercontent.com/FanoraSsh/Example/main/udp/udp' 
   chmod +x /usr/bin/udp
   ufw disable &>/dev/null
   apt remove netfilter-persistent -y
