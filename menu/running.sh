@@ -50,7 +50,7 @@ export IP=$( curl -s https://ipinfo.io/ip/ )
 # // Exporting Network Interface
 export NETWORK_IFACE="$(ip route show to default | awk '{print $5}')"
 #link izin ip vps
-url_izin='https://raw.githubusercontent.com/Rerechan02/iziznscript/main/ip'
+url_izin='https://raw.githubusercontent.com/FanoraSsh/iziznscript/main/ip'
 
 # Mendapatkan IP VPS saat ini
 ip_vps=$(curl -s ifconfig.me)
@@ -339,8 +339,8 @@ kernelku=$(uname -r)
 
 # DNS PATCH
 #tipeos2=$(uname -m)
-#Name=$(curl -sS https://raw.githubusercontent.com/Fahmiiiiiiii/anjim/main/anjay/allow | grep $MYIP | awk '{print $2}')
-#Exp=$(curl -sS https://raw.githubusercontent.com/Fahmiiiiiiii/anjim/main/anjay/allow | grep $MYIP | awk '{print $3}')
+#Name=$(curl -sS https://raw.githubusercontent.com/FanoraSsh/anjim/main/anjay/allow | grep $MYIP | awk '{print $2}')
+#Exp=$(curl -sS https://raw.githubusercontent.com/FanoraSsh/anjim/main/anjay/allow | grep $MYIP | awk '{print $3}')
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
 echo -e ""
