@@ -119,7 +119,7 @@ echo -e "${BICyan}┌───────────────────�
 echo -e "  ${BICyan} NGINX ${NC}: ${GREEN}$status_nginx  SSH ${NC}: ${GREEN}$status_ssh ${BICyan} XRAY  ${NC}: ${GREEN}$status_xray"
 echo -e "${BICyan}└──────────────────────────────────────────────────┘${NC}" | lolcat
 echo -e "\033[1;93m┌─────────────────────────────────────────────────┐\033[0m" 
- echo -e "\033[1;93m│\033[0m            ${RED}SCRIPT BY RERECHAN STORE $NC \033[1;93m           │\033[0m"  | lolcat
+ echo -e "\033[1;93m│\033[0m            ${RED}SCRIPT BY FANORAPREM STORE $NC \033[1;93m           │\033[0m"  | lolcat
  echo -e "\033[1;93m└─────────────────────────────────────────────────┘\033[0m"
  echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN          │\033[0m"  | lolcat
