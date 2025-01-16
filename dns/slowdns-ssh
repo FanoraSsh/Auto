@@ -33,7 +33,7 @@ echo -e ""
 echo -e "      This script will install the"
 echo -e "     slowdns for DNS tunneling with SSH."
 echo -e ""
-echo -e "         \033[1;33mInstaller made by @Rerechan02 \033[1;37m"
+echo -e "         \033[1;33mInstaller made by @FanoraVpnTunnel \033[1;37m"
 echo -e ""
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo ""
@@ -73,8 +73,8 @@ touch infons
 echo $nameserver > infons
 set_ns () {
 sleep 1
-wget https://raw.githubusercontent.com/Rerechan02/Example/main/dns/startdns 
-wget https://raw.githubusercontent.com/Rerechan02/Example/main/dns/restartdns
+wget https://raw.githubusercontent.com/FanoraSsh/Example/main/dns/startdns 
+wget https://raw.githubusercontent.com/FanoraSsh/Example/main/dns/restartdns
 chmod +x startdns
 chmod +x restartdns
 sed -i "s;1234;$nameserver;g" /etc/slowdns/startdns > /dev/null 2>&1
