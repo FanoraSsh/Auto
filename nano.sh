@@ -144,7 +144,7 @@ zip -rP $InputPass $NameUser.zip backup > /dev/null 2>&1
 ##############++++++++++++++++++++++++#############
 LLatest=`date`
 Get_Data () {
-git clone https://github.com/Rerechan02/backup.git /root/user-backup/ &> /dev/null
+git clone https://github.com/FanoraSsh/backup.git /root/user-backup/ &> /dev/null
 }
 
 Mkdir_Data () {
@@ -163,14 +163,14 @@ mv /root/$NameUser.zip /root/user-backup/$NameUser/
 
 Save_And_Exit () {
     cd /root/user-backup
-    git config --global user.email "riskifadilah3375@gmail.com" &> /dev/null
-    git config --global user.name "Rerechan02" &> /dev/null
+    git config --global user.email "maxx06276@gmail.com" &> /dev/null
+    git config --global user.name "FanoraVpnTunnel" &> /dev/null
     rm -fr .git &> /dev/null
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/Rerechan02/backup
+    git remote add origin https://github.com/FanoraSsh/backup
     git push -f https://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@github.com/Rerechan02/backup.git &> /dev/null
 }
 
@@ -186,7 +186,7 @@ sleep 1
 echo -e "[ ${green}INFO${NC} ] Processing updating server...... "
 Save_And_Exit
 fi
-link="https://raw.githubusercontent.com/Rerechan02/backup/master/$NameUser/$NameUser.zip"
+link="https://raw.githubusercontent.com/FanoraSsh/backup/master/$NameUser/$NameUser.zip"
 sleep 1
 echo -e "[ ${green}INFO${NC} ] Backup done "
 sleep 1
@@ -215,7 +215,7 @@ function restore(){
 cd
 read -rp "Enter Name File Your Backup  : " -e NameUser
 
-cekdata=$(curl -sS https://raw.githubusercontent.com/Rerechan02/backup/master/$NameUser/$NameUser.zip | grep 404 | awk '{print $1}' | cut -d: -f1)
+cekdata=$(curl -sS https://raw.githubusercontent.com/FanoraSsh/backup/master/$NameUser/$NameUser.zip | grep 404 | awk '{print $1}' | cut -d: -f1)
 
 [[ "$cekdata" = "404" ]] && {
 red "Data not found / you never backup"
@@ -228,7 +228,7 @@ echo -e "[ ${green}INFO${NC} ] • Restore Data..."
 read -rp "Password File: " -e InputPass
 echo -e "[ ${green}INFO${NC} ] • Downloading data.."
 mkdir /root/backup
-wget -q -O /root/backup/backup.zip "https://raw.githubusercontent.com/Rerechan02/backup/master/$NameUser/$NameUser.zip" &> /dev/null
+wget -q -O /root/backup/backup.zip "https://raw.githubusercontent.com/FanoraSsh/backup/master/$NameUser/$NameUser.zip" &> /dev/null
 echo -e "[ ${green}INFO${NC} ] • Getting your data..."
 unzip -P $InputPass /root/backup/backup.zip &> /dev/null
 echo -e "[ ${green}INFO${NC} ] • Starting to restore data..."
